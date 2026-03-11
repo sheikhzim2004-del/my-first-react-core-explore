@@ -49,3 +49,13 @@
   margin: 20px;
   border-radius: 20px;
 }
+
+
+.player{
+  color: blueviolet;
+  border: 5px solid rgb(247, 34, 158);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(241, 241, 240);
+}

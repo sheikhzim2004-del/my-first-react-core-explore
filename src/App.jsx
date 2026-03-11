@@ -21,7 +21,37 @@ function App() {
       <Product name='Bike' brand='Gixer' price='500000' expensive='false' color='Black'></Product>
       </div>
 
+      <Player name='Neimar' goal='200'></Player>
+      <Player name='Ambappe' goal='157'></Player>
+      <Player name='Ronaldo' goal='250'></Player>
+
+      <Salami event='Eid' salami='200'></Salami>
+      <Salami event='BirthDay' salami='500'></Salami>
+      <Salami event='BreackUp' salami='100'></Salami>
+      <Salami event='Graduation'></Salami>
+      
+
     </>
+  )
+}
+
+
+function Salami({event, salami = 0 }){
+  return(
+    <div className='style'>
+      <h2>Event: {event}</h2>
+      <h4>Salami: {salami}</h4>
+    </div>
+  )
+}
+
+
+function Player({name, goal}){
+  return(
+    <div className='player'>
+      <h2>Player Name: {name}</h2>
+      <h4>Goal Score: {goal}</h4>
+    </div>
   )
 }
 
@@ -35,8 +65,8 @@ function Product(props){
       border: '3px dotted green',
       borderRadius: '20px',
     }}>
-      <h4>Product Details Under Bellow</h4>
-      <p>Product Name: {props.name}</p>
+      <h4 style={{color: 'darkcyan'}}>Product Details Under Bellow</h4>
+      <p>Pd Name: {props.name}</p>
       <p>Brand: {props.brand}</p>
       <p>Price: {props.price}</p>
       <p>Expensive: {props.expensive}</p>
