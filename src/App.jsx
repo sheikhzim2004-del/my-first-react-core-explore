@@ -1,12 +1,14 @@
 
 import './App.css'
+import ToDo from './todo'
 
 function App() {
-
+const time =50;
 
   return (
     <>
       <h1>Vite + React Core Concept</h1>
+      
       <Person></Person>
       <Isrich></Isrich>
       <Isrich></Isrich>
@@ -29,6 +31,12 @@ function App() {
       <Salami event='BirthDay' salami='500'></Salami>
       <Salami event='BreackUp' salami='100'></Salami>
       <Salami event='Graduation'></Salami>
+
+      <h3>Task List</h3>
+      <ToDo task='Explore React' isDone={true} time={time}></ToDo>
+      <ToDo task='Practice  JS' isDone={false}></ToDo>
+      <ToDo task='Take a Shower' isDone={false}></ToDo>
+      <ToDo task='Complete Reading Book' isDone={true}></ToDo>
       
 
     </>
