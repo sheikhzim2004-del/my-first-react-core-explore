@@ -1,14 +1,34 @@
 
 import './App.css'
 import ToDo from './todo'
+import Actor from './actor'
+import Friend from './friend';
 
 function App() {
 const time =50;
+const actors = ['kamal', 'shakib khan', 'shabana', 'rittik rowshon'];
+const friends = [
+  {id: 1, name: 'Kamal', age: '22', passion: 'Prem'},
+  {id: 2, name: 'Likhon', age: '23', passion: 'Freluncher'},
+  {id: 3, name: 'Naziba', age: '20', passion: 'Devloping'},
+  {id: 4, name: 'Noyon', age: '25', passion: 'Reading Book'}
+]
 
   return (
     <>
       <h1>Vite + React Core Concept</h1>
+
+    {/* //arrry kea  emport export kora */}
+      <h2>Nayok List</h2>
+      {
+        actors.map(actor => <Actor  actor={actor}></Actor>)
+      }
       
+      {/* //object kea  emport export kora */}
+      <h2>My FriendList</h2>
+      {
+        friends.map(friend => <Friend key={friend.id} friend={friend}></Friend>)
+      }
       <Person></Person>
       <Isrich></Isrich>
       <Isrich></Isrich>

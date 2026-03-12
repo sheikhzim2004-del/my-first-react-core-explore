@@ -6,3 +6,4 @@ export default function ToDo({task, isDone, time = 0}){
              }
 
 }
+
